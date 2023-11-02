@@ -1,0 +1,103 @@
+package c3654717;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+
+/**
+ * Number sorter class provides method for sorting through an array of integers <br>
+ * in ascending/descending order using flags and two stacks
+ * 
+ * 
+ * @author c3654717
+ *
+ */
+
+
+public class NumberSorter {
+	
+	/**
+	 * Sorts array of integers using source and destination stack in a specified order(ascending or descending)
+	 * which is provided by the flag
+	 * 
+	 * 
+	 * @param numbers integer array to be sorted
+	 * @param ascending boolean flag telling code wether code should be sorted
+	 * in ascending or descending order
+	 */
+	
+	 void sort(int[] numbers, boolean ascending) {
+		//Source stack where numbers popped
+		Stack<Integer> srcStack = new Stack<Integer>();
+		
+		//destination stack where numbers are pushed
+		Stack<Integer> destStack = new Stack<Integer>();
+		
+		//Add initial array of numbers to source stack
+		for (int number : numbers) {
+			srcStack.push(number);
+		}
+		
+	
+	
+		
+		while (srcStack.size() > 0) {
+			int next = srcStack.pop();
+			
+			
+			if (ascending = true) {
+			while (destStack.size() > 0 && destStack.peek() < next) {
+				srcStack.push(destStack.pop());
+				}
+			}
+			
+			
+			if (ascending = false) {
+				while (destStack.size() > 0 && destStack.peek() > next) {
+					srcStack.push(destStack.pop());
+					}
+				
+			}
+			
+			
+			
+			destStack.push(next);
+		
+		}
+		
+		
+		
+		
+			
+			
+			
+			
+			
+		
+		
+		while (!destStack.isEmpty()) {
+			srcStack.push(destStack.pop());
+		}
+		
+		
+	
+		while (!srcStack.isEmpty()) {
+			System.out.print(srcStack.pop() + " ");
+		}
+		
+		
+	
+		
+		
+		
+		
+	
+	
+	
+	}
+	
+	
+	
+	
+
+}
