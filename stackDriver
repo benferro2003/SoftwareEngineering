@@ -1,0 +1,25 @@
+package c3654717;
+
+/**
+ * Driver class used to create instances of number sorter class to allow methods to be tested
+ * 
+ * @author c3654717
+ *
+ */
+public class StackDriver {
+
+	
+	/**
+	 * creates instances of number sorter class, testing sort method using different integer array lists.
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		NumberSorter sorter = new NumberSorter();
+		sorter.sort(new int [] {1,9,2,3,19,8,12,1,99,2,43,68,109,0},false);
+		sorter.sort(new int [] {1,2,3,4}, false);
+		sorter.sort(new int [] {4,3,2,1}, true);
+
+	}
+
+}
