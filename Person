@@ -1,0 +1,97 @@
+package c3654717;
+/**
+ * Class to provide getters and setters for attributes related to the person
+ * including height and age etc.
+ * @author c3654717
+ *
+ */
+public class Person {
+	int height;
+	int age;
+	boolean gender;
+	
+	/**
+	 * Constructor
+	 * @param height
+	 * @param age
+	 * @param gender
+	 */
+	public Person(int height, int age, boolean gender) {
+		this.height = height;
+		this.age = age;
+		this.gender = gender;
+		
+	}
+	
+	/**
+	 *Setter for height attribute 
+	 * @param height used to set height
+	 */
+	public void setHeight(int height)
+	{
+		this.height = height;	
+	}
+	
+	/**
+	 *Setter for age attribute 
+	 * @param age used to set age
+	 */
+	public void setAge(int age)
+	{
+		this.age = age;	
+	}
+	
+	/**
+	 * Sets gender
+	 * 
+	 * @param gender used to set gender as boolean value true for male
+	 * and false for female
+	 */
+	public void setGender(boolean gender)
+	{
+		this.gender = gender;	
+	}
+	
+	
+	/**
+	 * retrieves height 
+	 * @return height integer value
+	 */
+	public int getHeight() {
+		return height;
+	}
+	
+	/**
+	 * retrieves age value 
+	 * 
+	 * @return age integer value
+	 */
+	public int getAge() {
+		return age;
+	}
+	
+	
+	/**
+	 *Retrieves gender of person
+	 * 
+	 * @return true or false
+	 */
+	public boolean getGender() {
+		return gender;
+	}
+	
+	/**
+	 * overrides to string class to allow attributes to be returned
+	 */
+	@Override
+	public String toString() {
+		
+		return "height: " + height + " age: " + age + " gender: " + gender;
+		
+	}
+	
+	
+	
+	
+
+}
