@@ -1,0 +1,50 @@
+{
+	"c00212" : {
+		"name" : "John Smith",
+		"year" : 2,
+		"average" : 70.3,
+		"enrolled" :  true,
+		"course" : "M.Sc. Engineering",
+		"university" : "Leeds Beckett"
+	}
+	
+	
+	,"c76252" : {
+		"name" : "Pete Smallface",
+		"year" : 3,
+		"average" : 62.4,
+		"enrolled" :  false,
+		"course" : "B.Sc. Computer Forensics",
+		"university" : "Manchester"
+	}
+	
+	,"c23432" : {
+		"name" : "Jamie Snow",
+		"year" : 2,
+		"average" : 72.4,
+		"enrolled" :  true,
+		"course" : "B.Sc. Computer Science",
+		"university" : "Leicester"
+	}
+	
+	
+	,"c32424" : {
+		"name" : "lila Smay",
+		"year" : 3,
+		"average" : 82.4,
+		"enrolled" :  false,
+		"course" : "B.Sc. Digital Forensics",
+		"university" : "Uni of Bristol"
+	}
+	
+	
+	,"c98799" : {
+		"name" : "Peppa forn",
+		"year" : 3,
+		"average" : 52.4,
+		"enrolled" :  true,
+		"course" : "B.Sc. Computer Science",
+		"university" : "Birmingham",
+		"suspended" : true
+	}
+}
